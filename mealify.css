@@ -1,0 +1,426 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+/* :target{
+    background-color: green !important;
+}  */
+
+.btn{
+    background-color: #ce1212;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#sec-1{
+    background-color: #eee;
+}
+#sec-1 nav{
+    padding: 15px 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#sec-1 nav h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
+#sec-1 nav h2::after{
+    content: ".";
+    font-size: 30px;
+    color: #ce1212;
+}
+#sec-1 nav .right-side{
+    display: flex;
+    /* background-color: #ce1212; */
+    width: 25%;
+    align-items: center;
+    justify-content: space-around;
+}
+#sec-1 nav .right-side .dark-mode a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    
+}
+#sec-1 nav .right-side .dark-mode i{
+    font-size: 25px;
+}
+#sec-1 nav .menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 30px;
+    height: 30px;
+    /* background-color: aqua; */
+    margin-right: 15px;
+}
+#sec-1 nav .right-side {
+    justify-content: space-evenly;
+    width:20%;
+    align-items: center;
+}
+#sec-1 nav .right-side .menu{
+    font-size: 25px;
+}
+
+#sec-1 nav ul{
+    /* display: flex;
+    justify-content: space-around;
+    background-color: red;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500; */
+    display: none;
+}
+#sec-1 nav a{
+    /* color: black;
+    text-decoration: none;
+    padding: 5px; */
+    display: none;
+}
+#sec-1 header{
+    padding-top: 150px;
+    text-align: center;
+}
+#sec-1 header .pic img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#sec-1 header h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+#sec-1 header p{
+    margin-bottom: 15px;
+}
+#sec-1 header .btn-box{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+}
+#sec-1 header .play{
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient( to right, #ce1212 0 50%, transparent 50% 100% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent ;
+    position: relative;
+    margin-right: 10px;
+
+}
+
+#sec-1 header .play::before{
+    content: "";
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+#sec-1 header .play i{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+#sec-1 header .btn-box .right-btn{
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sec-1 header .btn-box .right-btn:hover {
+    color: #ce1212;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+#sec-1 header .btn-box a{
+    text-decoration: none;
+    color: black;
+}
+
+#sec-2{
+    padding: 50px 0;
+    text-align: center;
+    /* background-color: #ce1212; */
+}
+#sec-2 .container h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#sec-2 .container .parent{
+    /* overflow: hidden;
+    width: 100%; */
+}
+#sec-2 .container h2{
+    margin-bottom: 50px;
+}
+#sec-2 .container .child{
+    width: 100%;
+    background-color: #eee;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+#sec-2 .container .child img{
+    width: 100%;
+}
+#sec-2 .container .child .social{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 150px;
+    width: 45px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 25px;
+    right: -15%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#sec-2 .container .child:hover .social{
+    right: 25px;
+    transition-property: right;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s
+
+}
+#sec-2 .container .child:hover{
+    transform: scale(1.07);
+    transition: transform;
+    transition-duration: 0.5s;
+}
+
+#sec-2 .container .child h3{
+    margin: 10px 0;
+}
+#sec-2 .container .child span{
+    margin: 10px 0;
+    display: block;
+}
+#sec-2 .container .child p{
+    width: 100%;
+}
+
+#sec-3 {
+    padding: 50px 0;
+    background-color: #eee;
+}
+#sec-3 .container .pics{
+    /* background-color: crimson; */
+}
+#sec-3 .container h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#sec-3 .container h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#sec-3 .container .pics div{
+    border: 5px white solid;
+    margin-bottom: 15px;
+}
+#sec-3 .container .pics img{
+    width: 100%;
+}
+
+#sec-4{
+    padding: 50px 0;
+}
+#sec-4 .container h4{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#sec-4 .container h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#sec-4 .container .location iframe{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#sec-4 .container .info{
+    /* background-color: brown; */
+}
+#sec-4 .container .info article{
+    margin-bottom: 10px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px;
+}
+#sec-4 .container .info article i{
+    background-color: #ce1212;
+    color: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 15px;
+    font-size: 20px;
+}
+#sec-4 .container form{
+    margin-top: 25px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px;
+}
+#sec-4 .container form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+#sec-4 .container form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+#sec-4 .container form .btn{
+    margin: auto;
+    display: block;
+}
+
+footer{
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+footer .container article{
+    padding: 10px;
+    /* background-color: cadetblue; */
+    margin: 15px 0;
+}
+footer .container .artcl-1  h2{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+footer .container .artcl-1  img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+footer .container .artcl-1  h2::after{
+    content: ".";
+    color: #ce1212;
+}
+footer .container .artcl-1 p{
+    margin-bottom: 15px;
+}
+footer .container .artcl-1 h3{
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+footer .container .artcl-1 .icons{
+    display: flex;
+    justify-content: space-around;
+}
+footer .container .artcl-1 .icons i{
+    font-size: 25px;
+}
+footer .container .artcl-2 h3{
+    margin-bottom: 10px;
+}
+footer .container .artcl-2 p{
+    margin-bottom: 10px;
+}
+footer .container .artcl-2 input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+footer .container .artcl-2 button{
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+footer .container .artcl-2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .container .artcl-2 ul li{
+    width: 47%;
+    padding: 7px;
+    /* background-color: salmon; */
+}
+footer .container .artcl-2 ul li:hover{
+    background-color: rgba(105, 103, 103, 0.2);
+    transform: translateX(10px);
+    transition: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+footer .container .artcl-2 ul li i{
+    margin-right: 7px;
+}
+footer .container .artcl-3 h3{
+    margin-bottom: 15px;
+}
+footer .container .artcl-3 div{
+    padding: 10px;
+}
+footer .container .artcl-3 div i{
+    color: #ce1212;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

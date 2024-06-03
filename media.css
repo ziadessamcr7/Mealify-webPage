@@ -1,0 +1,151 @@
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+	.container {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    
+    #sec-2 .container .parent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-2 .container .parent .child{
+        width: 48%;
+    }
+    #sec-2 .container .parent .child .social{
+        right: -20%;
+    }
+    #sec-2 .container .child:hover .social{
+        right: 5%;
+    }
+
+    #sec-3 .container .pics{
+        column-count: 2;
+    }
+    #sec-3 .container .pics div{
+        margin-bottom: 10px;
+    }
+
+    #sec-4 .container .info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-4 .container .info article{
+        width: 49.5%;
+        padding: 10px;
+
+    }
+
+    footer .container .parent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .container .parent .artcl-1,
+    footer .container .parent .artcl-3 {
+        width: 49%;
+        order: -1;
+    }
+
+    footer .container .parent .artcl-2{
+        width: 100%;
+    }
+    footer .container .artcl-2 input{
+        width: 84%;
+    }
+    footer .container .artcl-2 button{
+        width: 14%;
+        padding: 12px 5px;
+    }
+
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.container {
+		width: 920px;
+	}
+
+    #sec-1 .container .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #sec-1 .container .content .pic{
+        width: 45%;
+    }
+    #sec-1 .container .content .text{
+        width: 48%;
+        text-align: left;
+        order: -1;
+    }
+    #sec-1 header .btn-box {
+        justify-content: flex-start;
+        text-align: center;
+    }
+    #sec-1 header .btn-box .right-btn{
+        margin-left: 15px;
+    }
+
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.container {
+		width: 1140px;
+	}
+    #sec-1 nav .right-side .menu{
+        display: none;
+
+    }
+    #sec-1 nav .right-side{
+        display: flex;
+        order: 1;
+        /* background-color: blue; */
+    }
+
+    #sec-1 nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        /* background-color: red; */
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 500;
+        width: 30%;
+    }
+    #sec-1 nav a{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+        display: flex;
+    }
+
+    #sec-2 .container .parent{
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec-2 .container .parent .child{
+        width: 32%;
+    }
+    
+    #sec-3 .container .pics{
+        column-count: 3;
+        width: 80%;
+        margin: auto;
+    
+    }
+
+}
+@media (min-width: 1400px) {  
+	.container {
+		width: 1340px;
+	}
+}
